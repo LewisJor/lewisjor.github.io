@@ -36,7 +36,5 @@ jobs:
           git add .
           git config user.name 'lewisjor'
           git config user.email 'lewisjor24@gmail.com'
-          last_commit_msg=$(git log -1 --pretty=%B)
-          git add .
-          git commit -m "Update Site: $last_commit_msg"
-          git push
+          git commit -m 'Updated site'
+          git push   
