@@ -1,4 +1,16 @@
-baseURL: "https://lewisjor.github.io/lewisjor.github.io/"
+baseURL: "https://lewisjor.github.io/"
 languageCode: en-us
 title: Jordan Lewis
 theme: ["PaperMod"]
+
+menu:
+  main:
+    - identifier: "blog"
+      name: "Blog"
+      url: "/blog/"
+      weight: 10
+
+    - identifier: "about"
+      name: "About Me"
+      url: "/about/"
+      weight: 20
