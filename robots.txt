@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://lewisjor.github.io//sitemap.xml
