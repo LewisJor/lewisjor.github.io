@@ -1,6 +1,6 @@
 ---
 title: "wool-gathering"
-description: "Thoughts on software engineering, machine learning, and building systems."
+description: "Thoughts on technology, life, and other interesting topics."
 ---
 
 Coming Soon
