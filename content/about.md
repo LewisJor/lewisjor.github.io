@@ -23,10 +23,6 @@ I'm particularly interested in:
 - **Edge Computing**: Systems that operate in disconnected or resource-constrained environments
 - **Defense Technology**: Applying advanced ML to mission-critical applications
 
-## Current Focus
-
-I'm exploring opportunities in defense/space/biolog/robotics technology, where I can combine my technical expertise with my understanding of mission-critical systems. I'm passionate about applying machine learning and distributed systems to solve problems.
-
 ## Let's Connect
 
 I'm always interested in connecting with others working on challenging technical problems. Whether it is at a coffee shop or 4000 miles away. Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/mrlewisjor/).
