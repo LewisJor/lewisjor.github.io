@@ -1,0 +1,11 @@
+name = "JL Theme"
+license = "MIT"
+licenselink = "https://github.com/jordanlewis/portfolio-blog"
+description = "A tactical, defense-tech inspired portfolio theme"
+homepage = "https://github.com/jordanlewis/portfolio-blog"
+tags = ["portfolio", "blog", "minimal", "dark"]
+features = ["blog", "portfolio", "responsive"]
+min_version = "0.112.0"
+
+[author]
+  name = "Jordan Lewis"

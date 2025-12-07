@@ -1,0 +1,40 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Description }}
+  <p class="page-description">{{ . }}</p>
+  {{ end }}
+</header>
+
+{{ if .Content }}
+<div class="page-content">
+  {{ .Content }}
+</div>
+{{ end }}
+
+<div class="projects-grid">
+  {{ range .Pages }}
+  <article class="project-card">
+    <a href="{{ .Permalink }}" class="project-card-link">
+      <div class="project-card-image">
+        {{ with .Params.image }}
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+        {{ end }}
+      </div>
+      <div class="project-card-body">
+        <h2 class="project-card-title">{{ .Title }}</h2>
+        <p class="project-card-description">{{ .Summary | truncate 120 }}</p>
+        {{ with .Params.tech }}
+        <div class="project-card-tech">
+          {{ range . }}
+          <span class="tech-tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </a>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
+

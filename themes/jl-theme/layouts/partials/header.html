@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="header-content">
+    <div class="header-name">
+      <h1 class="site-name">{{ .Site.Title }}</h1>
+      <p class="site-title">Software Engineer / Applied AI</p>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+          <a href="{{ .URL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+

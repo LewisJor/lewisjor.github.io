@@ -1,0 +1,50 @@
+baseURL = 'https://jordanlewis.github.io/'
+languageCode = 'en-us'
+title = 'Jordan Lewis'
+theme = 'jl-theme'
+
+[params]
+  author = "Jordan Lewis"
+  description = "Software Engineer | U.S. Citizen | Former Marine Corps Leader"
+  tagline = "Building intelligent systems at the edge of what's possible"
+  github = "https://github.com/LewisJor"
+  linkedin = "https://www.linkedin.com/in/mrlewisjor/"
+
+[permalinks]
+  wool-gathering = "/wool-gathering/:slug/"
+  rnd = "/rnd/:slug/"
+
+[menu]
+  [[menu.main]]
+    identifier = "wool-gathering"
+    name = "wool-gathering"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "rnd"
+    name = "r&d"
+    url = "/rnd/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+enableRobotsTXT = true

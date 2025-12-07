@@ -1,0 +1,47 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Description }}
+  <p class="page-description">{{ . }}</p>
+  {{ end }}
+</header>
+
+{{ if .Content }}
+<div class="page-content">
+  {{ .Content }}
+</div>
+{{ end }}
+
+<div class="content-layout">
+  <div class="posts-section">
+    <div class="posts-grid">
+      {{ range first 5 (where .Site.RegularPages "Section" "wool-gathering") }}
+      <article class="post-card">
+        <a href="{{ .Permalink }}" class="post-card-link">
+          <h2 class="post-card-title">{{ .Title }}</h2>
+          <p class="post-card-excerpt">{{ .Summary | truncate 180 }}</p>
+          <div class="post-card-meta">
+            <span class="post-card-date">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            </span>
+            {{ with .Params.tags }}
+            <div class="post-card-tags">
+              {{ range first 3 . }}
+              <span class="tag">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
