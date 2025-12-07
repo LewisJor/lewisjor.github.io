@@ -1,11 +1,11 @@
-baseURL = 'https://jordanlewis.github.io/'
+baseURL = 'https://lewisjor.github.io/'
 languageCode = 'en-us'
 title = 'Jordan Lewis'
 theme = 'jl-theme'
 
 [params]
   author = "Jordan Lewis"
-  description = "Software Engineer | U.S. Citizen | Former Marine Corps Leader"
+  description = "Software Engineer"
   tagline = "Building intelligent systems at the edge of what's possible"
   github = "https://github.com/LewisJor"
   linkedin = "https://www.linkedin.com/in/mrlewisjor/"
